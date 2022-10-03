@@ -67,7 +67,7 @@ const Signup = () => {
         //object destruction so dont need to write user.name etc again and again
         const { name, email, phone, company, position, message } = user;
         
-        const res = await fetch("/register", {
+        const res = await fetch("https://g42-server.herokuapp.com/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
