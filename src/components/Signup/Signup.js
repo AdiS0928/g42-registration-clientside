@@ -67,11 +67,7 @@ const Signup = () => {
         //object destruction so dont need to write user.name etc again and again
         const { name, email, phone, company, position, message } = user;
         
-        const res = await fetch("https://g42-server.herokuapp.com/register", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
+        axios.post("https://g42-server.herokuapp.com/register", {
             body:JSON.stringify({ 
                 // name: name doesnt need to be written because its the same name
                 name, email, phone, company, position, message
