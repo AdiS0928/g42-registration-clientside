@@ -69,10 +69,9 @@ const Signup = () => {
         const { name, email, phone, company, position, message } = user;
         
         axios.post("https://g42-server.herokuapp.com/register", 
-            JSON.stringify({ 
-                // name: name doesnt need to be written because its the same name
+            { 
                 name, email, phone, company, position, message
-            })
+            }
         );
 
         // const data = await res.json();
