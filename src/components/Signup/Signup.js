@@ -3,6 +3,7 @@ import "./Signup.css";
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import logo from './g42logo.png';
+import axios from "axios"
 
 const Signup = () => {
     const history = useNavigate();
