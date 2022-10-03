@@ -143,7 +143,7 @@ const Signup = () => {
 
 
                                     <div className="col-md-12">
-                                        <textarea className="form-control" type="textarea" name="message" id="message" rows='3' value={user.message} onChange={handleInputs} placeholder="For us, the answer is Yes. Now, what's your question?" required
+                                        <input className="form-control" type="textarea" name="message" id="message" rows='3' value={user.message} onChange={handleInputs} placeholder="For us, the answer is Yes. Now, what's your question?" required
                                         style={{  
                                             height: '115px',
                                             marginBottom: '0px',
