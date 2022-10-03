@@ -78,15 +78,17 @@ const Signup = () => {
             })
         });
 
-        const data = await res.json();
+        // const data = await res.json();
 
-        if(data.status === 422 || !data) {
-            window.alert("Invalid Credentials");
-            console.log("Invalid Credentials");
-        } else {
-            console.log("Form Submitted!");
-            history('/success');
-        }
+        // if(data.status === 422 || !data) {
+        //     window.alert("Invalid Credentials");
+        //     console.log("Invalid Credentials");
+        // } else {
+        //     console.log("Form Submitted!");
+        //     history('/success');
+        // }
+
+        history('/success');
 
     }
 
