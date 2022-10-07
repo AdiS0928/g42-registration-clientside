@@ -20,7 +20,7 @@ const Signup = () => {
         setUser({...user, [name]:value})
     }
 
-//fetch api to transfer data
+//fetch api to transfer data to
     const PostData = async (e) => {
         
         if (document.getElementById("name").value === "")
